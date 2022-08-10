@@ -16,10 +16,11 @@ application: globallogic {
   }
 }
 
-# visualization: {
-#   id: "hello_world"
-#   file: "visualization/bundle1.js"
-# }
+visualization: {
+  id: "hello_world"
+  label: "Hello World"
+  file: "visualization/bundle1.js"
+}
 
 # visualization: {
 #   id: "hello_world"

@@ -10,10 +10,22 @@ looker.plugins.visualizations.add({
       label: "Font Size",
       values: [
         {"Large": "large"},
+        {"Med": "med"},
         {"Small": "small"}
       ],
       display: "radio",
       default: "large"
+    },
+    font_color: {
+      type: "string",
+      label: "Font Color",
+      values: [
+       {"Red": "red"},
+        {"Green": "green"},
+        {"Yellow": "yellow"}
+    ],
+    display: "radio",
+    default: "large"
     }
   },
   // Set up the initial state of the visualization
@@ -22,6 +34,7 @@ looker.plugins.visualizations.add({
     // Insert a <style> tag with some styles we'll use later.
     element.innerHTML = `
       <style>
+
         .hello-world-vis {
           /* Vertical centering */
           height: 100%;
@@ -29,12 +42,43 @@ looker.plugins.visualizations.add({
           flex-direction: column;
           justify-content: center;
           text-align: center;
+
         }
         .hello-world-text-large {
           font-size: 72px;
+          color: #FF0000;
+          font-family:verdana;
+          background-color:powderblue;
+        }
+        .hello-world-text-med {
+          font-size: 50px;
+          color: #00FF00;
+          font-family:courier;
         }
         .hello-world-text-small {
           font-size: 18px;
+          color: yellow;
+          background-color:tomato;
+        }
+
+        .hello-world-vis_color {
+          /* Vertical centering */
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: left;
+          text-align: left;
+        }
+        .hello-world-text-red {
+          color: #FF0000;
+        }
+        .hello-worl
+
+        d-text-green {
+          color: #00FF00;
+        }
+        .hello-world-text-yellow {
+          color: yellow;
         }
       </style>
     `;
@@ -69,7 +113,11 @@ looker.plugins.visualizations.add({
     // Set the size to the user-selected size
     if (config.font_size == "small") {
       this._textElement.className = "hello-world-text-small";
-    } else {
+    }
+    else if(config.font_size == "med") {
+      this._textElement.className = "hello-world-text-med";
+    }
+    else {
       this._textElement.className = "hello-world-text-large";
     }
 
