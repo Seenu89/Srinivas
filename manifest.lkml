@@ -16,6 +16,13 @@ application: globallogic {
   }
 }
 
+application: helloworld-js {
+  label: "HelloWorld (JS)"
+  url: "http://localhost:8080/bundle.js"
+  entitlements: {
+    core_api_methods: ["me"]
+  }
+}
 visualization: {
   id: "hello_world"
   label: "Hello World"
