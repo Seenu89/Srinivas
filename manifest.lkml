@@ -18,7 +18,8 @@ application: globallogic {
 
 application: helloworld-js {
   label: "HelloWorld (JS)"
-  url: "http://localhost:8080/bundle.js"
+  # url: "http://localhost:8080/bundle.js"
+  file: "/extension/hello_user.js"
   entitlements: {
     core_api_methods: ["me"]
   }
@@ -30,7 +31,17 @@ application: tab {
   # file: "bundle.js
   entitlements: {
     core_api_methods: ["me"] #Add more entitlements here as you develop new functionality
-    use_embeds: yes
+    # use_embeds: yes
+  }
+}
+
+application: nav {
+  label: "Nav"
+  url: "http://localhost:3001/"
+  # file: "bundle.js
+  entitlements: {
+    core_api_methods: ["me"] #Add more entitlements here as you develop new functionality
+    # use_embeds: yes
   }
 }
 
