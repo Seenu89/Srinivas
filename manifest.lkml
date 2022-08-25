@@ -25,23 +25,12 @@ application: helloworld-js {
   }
 }
 
-application: tab {
-  label: "Tabs"
+application: work {
+  label: "work"
   url: "http://localhost:8080/bundle.js"
-  # file: "bundle.js
+# file: "/extension/hello_user.js"
   entitlements: {
-    core_api_methods: ["me"] #Add more entitlements here as you develop new functionality
-    # use_embeds: yes
-  }
-}
-
-application: nav {
-  label: "Nav"
-  url: "http://localhost:3001/"
-  # file: "bundle.js
-  entitlements: {
-    core_api_methods: ["me"] #Add more entitlements here as you develop new functionality
-    # use_embeds: yes
+    core_api_methods: ["me"]
   }
 }
 
