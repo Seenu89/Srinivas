@@ -42,7 +42,7 @@ application: helloworld-js {
 
 application: work {
   label: "work"
-  url: "http://localhost:3000/"
+  url: "http://localhost:3000/bundle.js"
 # file: "/extension/hello_user.js"
   entitlements: {
     core_api_methods: ["me"]

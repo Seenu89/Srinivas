@@ -3,6 +3,7 @@ connection: "looker_partner_demo"
 
 # include all the views
 include: "/views/**/*.view"
+include: "/brand.dashboard"
 
 # Datagroups define a caching policy for an Explore. To learn more,
 # use the Quick Help panel on the right to see documentation.
@@ -22,6 +23,7 @@ persist_with: looker_extenstion_default_datagroup
 # To see the Explore you’re building, navigate to the Explore menu and select an Explore under "Looker Extenstion"
 
 explore: order_items {
+  sql_always_where: ${users.region} IN ({{ _user_attributes['region'] }}) ;;
   join: users {
     type: left_outer
     sql_on: ${order_items.user_id} = ${users.id} ;;
@@ -75,7 +77,9 @@ explore: events {
   }
 }
 
-explore: users {}
+explore: users {
+  sql_always_where: ${region} IN ({{ _user_attributes['region'] }}) ;;
+}
 
 explore: products {
   join: distribution_centers {
