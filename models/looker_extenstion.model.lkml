@@ -21,10 +21,14 @@ persist_with: looker_extenstion_default_datagroup
 # Explores should be purpose-built for specific use cases.
 
 # To see the Explore you’re building, navigate to the Explore menu and select an Explore under "Looker Extenstion"
+access_grant: can_view_data {
+  user_attribute: is_combined_user
+  allowed_values: [ "Yes" ]
 
+}
 explore: order_items {
-  sql_always_where: ${rbac_view.user} IN ('{{ _user_attributes['first_name'] }}')
-  or ${rbac_view.reporting_manager} = ('{{ _user_attributes['first_name'] }}')  ;;
+  sql_always_where: ${rbac_view.user} = ('{{ _user_attributes['first_name'] }}')
+  OR ${rbac_view.reporting_manager} = ('{{ _user_attributes['first_name'] }}')  ;;
   access_filter: {
     field: users.region
     user_attribute: region

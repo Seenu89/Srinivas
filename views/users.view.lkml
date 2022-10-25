@@ -67,6 +67,7 @@ view: users {
 
   dimension: email {
     type: string
+    required_access_grants: [can_view_data]
     sql: ${TABLE}.email ;;
   }
 
