@@ -23,10 +23,22 @@ persist_with: looker_extenstion_default_datagroup
 # To see the Explore you’re building, navigate to the Explore menu and select an Explore under "Looker Extenstion"
 
 explore: order_items {
-  sql_always_where: ${users.region} IN ({{ _user_attributes['region'] }}) ;;
+  sql_always_where: ${rbac_view.user} IN ('{{ _user_attributes['first_name'] }}')
+  or ${rbac_view.reporting_manager} = ('{{ _user_attributes['first_name'] }}')  ;;
+  access_filter: {
+    field: users.region
+    user_attribute: region
+  }
+
   join: users {
     type: left_outer
     sql_on: ${order_items.user_id} = ${users.id} ;;
+    relationship: many_to_one
+  }
+
+  join: rbac_view {
+    type: left_outer
+    sql_on: ${users.region} = ${rbac_view.region} ;;
     relationship: many_to_one
   }
 

@@ -117,6 +117,7 @@ view: users {
 
   dimension: region {
     type: string
+    primary_key: yes
     sql: CASE WHEN ${traffic_source} = 'Display' THEN 'East'
     WHEN ${traffic_source} = 'Email' THEN 'West'
     WHEN ${traffic_source} = 'Facebook' THEN 'North'
