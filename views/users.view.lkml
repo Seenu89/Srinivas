@@ -67,6 +67,7 @@ view: users {
 
   dimension: email {
     type: string
+    required_access_grants: [can_view_data]
     sql: ${TABLE}.email ;;
   }
 
@@ -115,8 +116,37 @@ view: users {
     sql: ${TABLE}.traffic_source ;;
   }
 
+  dimension: region {
+    type: string
+    primary_key: yes
+    sql: CASE WHEN ${traffic_source} = 'Display' THEN 'East'
+    WHEN ${traffic_source} = 'Email' THEN 'West'
+    WHEN ${traffic_source} = 'Facebook' THEN 'North'
+    WHEN ${traffic_source} = 'Organic' THEN 'South'
+    WHEN ${traffic_source} = 'Search' THEN 'Central'
+    END
+    ;;
+  }
+
   measure: count {
     type: count
     drill_fields: [id, last_name, first_name, order_items.count, events.count]
+  # html:
+  # <table cellspacing="80" style="width:100%">
+  # <tbody>
+  # <tr>
+  # <td style="background-color:  e7eff3;width:33%;border-right:1px solid transparent;border-radius:10%">
+  # <div style="margin-right: 4px">
+  # <span>
+  # <p style= "margin:0;padding:0;border:none;line-height:0%"><font line-height="0%" size="1"><br><b> Total Customers&nbsp&nbsp</b></font></p>
+  # <h3 style= "margin-right:2px"><b><font size="5">{{ rendered_value }}</font></b></h3>
+  # </span>
+  # <span>
+  # <h1> <font size="2">
+
+  # <b><p style="color: #00B050">▲ 550
+  # <font color="  000000"> YOY&nbsp</font></p></b>
+  # </font></h1></span>
+  # </div>;;
   }
 }

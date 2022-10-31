@@ -3,6 +3,7 @@ connection: "looker_partner_demo"
 
 # include all the views
 include: "/views/**/*.view"
+include: "/brand.dashboard"
 
 # Datagroups define a caching policy for an Explore. To learn more,
 # use the Quick Help panel on the right to see documentation.
@@ -20,11 +21,28 @@ persist_with: looker_extenstion_default_datagroup
 # Explores should be purpose-built for specific use cases.
 
 # To see the Explore you’re building, navigate to the Explore menu and select an Explore under "Looker Extenstion"
+access_grant: can_view_data {
+  user_attribute: is_combined_user
+  allowed_values: [ "Yes" ]
 
+}
 explore: order_items {
+  sql_always_where: ${rbac_view.user} = ('{{ _user_attributes['first_name'] }}')
+  OR ${rbac_view.reporting_manager} = ('{{ _user_attributes['first_name'] }}')  ;;
+  access_filter: {
+    field: users.region
+    user_attribute: region
+  }
+
   join: users {
     type: left_outer
     sql_on: ${order_items.user_id} = ${users.id} ;;
+    relationship: many_to_one
+  }
+
+  join: rbac_view {
+    type: left_outer
+    sql_on: ${users.region} = ${rbac_view.region} ;;
     relationship: many_to_one
   }
 
@@ -79,7 +97,9 @@ explore: events {
   }
 }
 
-explore: users {}
+explore: users {
+  sql_always_where: ${region} IN ({{ _user_attributes['region'] }}) ;;
+}
 
 explore: products {
   join: distribution_centers {

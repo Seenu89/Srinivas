@@ -29,6 +29,57 @@ view: order_items {
       year
     ]
     sql: ${TABLE}.created_at ;;
+    # html: {{ rendered_value | date: "%A, %B %e, %Y" }} ;;
+  }
+
+  # dimension: dynamic_date {
+  #   label: "Dynamic Date"
+  #   type: string
+  #   sql:
+  #   CASE
+  #   WHEN date_diff(CAST({% date_end created_date %} as DATE), CAST({% date_start created_date %} as DATE), DAY) < 30 THEN ${created_date}
+  #   WHEN date_diff(CAST({% date_end created_date %} as DATE), CAST({% date_start created_date %} as DATE), DAY) > 365 THEN ${created_year}
+  #   WHEN date_diff(CAST({% date_end created_date %} as DATE), CAST({% date_start created_date %} as DATE), DAY) > 90 THEN ${created_month}
+  #   WHEN date_diff(CAST({% date_end created_date %} as DATE), CAST({% date_start created_date %} as DATE), DAY) > 30 THEN ${created_week}
+  #   ELSE ${created_month}
+  #   END ;;
+  # }
+
+  parameter: timeframe_selector {
+    type: unquoted
+    default_value: "week"
+    allowed_value: {
+      label: "Day"
+      value: "date"
+    }
+    allowed_value: {
+      label: "Week"
+      value: "week"
+    }
+    allowed_value: {
+      label: "Month"
+      value: "month"
+    }
+    allowed_value: {
+      label: "Year"
+      value: "year"
+    }
+  }
+
+  dimension: dynamic_timeframe {
+    label_from_parameter: timeframe_selector
+    sql:
+    {% if timeframe_selector._parameter_value == "date" %} ${created_date}
+    {% elsif timeframe_selector._parameter_value == "month" %} ${created_month}
+    {% elsif timeframe_selector._parameter_value == "year" %} ${created_year}
+    {% else %} ${created_week}
+    {% endif %}
+    ;;
+    html: {% if timeframe_selector._parameter_value == "date" %} {{ value | date: "%a, %b %e '%y" }}
+          {% elsif timeframe_selector._parameter_value == "month" %} {{ value | date: "%a, %b %e '%y" }}
+          {% elsif timeframe_selector._parameter_value == "year" %} {{ value }}
+          {% else %} {{ value | date: "%a, %b %e '%y" }}
+          {% endif %} ;;
   }
 
   dimension_group: delivered {
@@ -97,6 +148,7 @@ view: order_items {
   measure: average_sale_price {
     type: average
     sql: ${sale_price} ;;
+    value_format_name: decimal_2
   }
 
   dimension_group: shipped {
@@ -122,6 +174,300 @@ view: order_items {
   measure: count {
     type: count
     drill_fields: [detail*]
+  }
+
+  measure: hor_menu {
+    type: count
+    html:
+   <div style=" display: flex; justify-content: space-around;">
+   <img src="https://mms.businesswire.com/media/20220518005288/en/1457777/5/Logo_HZ_RGB.jpg" width="130" height="30" border="0" />
+  </div>
+   <ul style="
+    float:left;
+    list-style:none;
+    line-height:36px;
+    text-align:center;
+    background:#F2F2F2;
+    font-family:Google Sans, Noto Sans, Noto Sans JP, Noto Sans CJK KR, Noto Sans Arabic UI, Noto Sans Devanagari UI, Noto Sans Hebrew, Noto Sans Thai UI, Helvetica, Arial, sans-serif;
+    font-size:14px">
+
+   <li style="float:left;
+    border-right:2px solid #fff;
+    border-top:2px solid #fff;">
+    <a href=""
+    style="display:block;
+    padding:12px 28px;
+    color:#1d252c;
+    font-family: Lucida Console;
+    background:#F2F2F2;
+    text-decoration:none;
+    border-radius: 8px;"
+    >OKR's</a></li>
+
+   <li style="float:left;
+    border-right:2px solid #fff;
+    border-top:2px solid #fff;">
+    <a href=""
+    style="display:block;
+    padding:12px 28px;
+    color:#1d252c;
+    font-family: Lucida Console;
+    background:#F2F2F2;
+    text-decoration:none;
+    border-radius: 8px;"
+    >CRR</a></li>
+
+    <li style="float:left;
+    border-right:2px solid #fff;
+    border-top:2px solid #fff;">
+    <a href=""
+    style="display:block;
+    padding:12px 28px;
+    color:#1d252c;
+    font-family: Lucida Console;
+    background:#F2F2F2;
+    text-decoration:none;
+    border-radius: 8px;">Status</a></li>
+
+    <li style="float:left;
+    border-right:2px solid #fff;
+    border-top:2px solid #fff;">
+    <a href=""
+    style="display:block;
+    padding:12px 28px;
+    color:#1d252c;
+    font-family: Lucida Console;
+    background:#1ce783;
+    text-decoration:none;
+    border-radius: 8px;"
+    >Data Product</a></li>
+
+   <li style="float:left;
+    border-right:2px solid #fff;
+    border-top:2px solid #fff;">
+    <a href=""
+    style="display:block;
+    padding:12px 28px;
+    color:#1d252c;
+    font-family: Lucida Console;
+    background:#F2F2F2;
+    text-decoration:none;
+    border-radius: 8px;"
+    >Data Search</a></li>
+
+   <li style="float:left;
+    border-right:2px solid #fff;
+    border-top:2px solid #fff;">
+    <a href=""
+    style="display:block;
+    padding:12px 28px;
+    color:#1d252c;
+    font-family: Lucida Console;
+    background:#F2F2F2;
+    text-decoration:none;
+    border-radius: 8px;"
+    >Data Access</a></li>
+
+   <li style="float:left;
+    border-right:2px solid #fff;
+    border-top:2px solid #fff;
+    "><a href=""
+    style="display:block;
+    padding:12px 28px;
+    color:#1d252c;
+    font-family: Lucida Console;
+    background:#F2F2F2;
+    text-decoration:none;
+    border-radius: 8px;"
+    >Data Cost</a></li>
+
+   <li style="float:left;
+    border-right:2px solid #fff;
+    border-top:2px solid #fff;">
+    <a href=""
+    style="display:block;
+    padding:12px 28px;
+    color:#1d252c;
+    font-family: Lucida Console;
+    background:#F2F2F2;
+    text-decoration:none;
+    border-radius: 8px;"
+    >Engage</a></li>
+
+   <li style="float:left;
+    border-right:2px solid #fff;
+    border-top:2px solid #fff;
+    "><a href=""
+    style="display:block;
+    padding:12px 28px;
+    color:#1d252c;
+    font-family: Lucida Console;
+    background:#F2F2F2;
+    text-decoration:none;
+    border-radius: 8px;"
+    >TRANSFER MARKET</a></li>
+
+    <li style="float:left;
+    border-right:2px solid #fff;
+    border-top:2px solid #fff;
+    "><a href=""
+    style="display:block;
+    padding:12px 28px;
+    color:#1d252c;
+    font-family: Lucida Console;
+    background:#F2F2F2;
+    text-decoration:none;
+    border-radius: 8px;"
+    >TRADE</a></li>
+
+    </ul>
+
+  ;;
+  }
+
+  measure: menu {
+    type: count
+    # sql: 1;;
+    html:
+      <img src="https://mms.businesswire.com/media/20220518005288/en/1457777/5/Logo_HZ_RGB.jpg" width="130" height="30" border="0" display="block" margin-left="auto" margin-right="auto"/>
+
+            <ul style="margin:0;
+            padding:0;
+            list-style:none;
+            line-height:36px;
+            text-align:left;
+            font-family:Google Sans, Noto Sans, Noto Sans JP, Noto Sans CJK KR, Noto Sans Arabic UI, Noto Sans Devanagari UI, Noto Sans Hebrew, Noto Sans Thai UI, Helvetica, Arial, sans-serif;
+            font-size:15px">
+
+      <li style="
+      border-right:2px solid #fff;
+      border-top:2px solid #fff;">
+      <a href="https://tredencepartner.cloud.looker.com/dashboards-next/14"
+      style="display:block;
+      padding:0 28px;
+      color:#1d252c;
+      text-align:left;
+      font-family: Lucida Console;       text-decoration:none;" >
+      <img src="https://cdn-icons-gif.flaticon.com/7211/7211809.gif" width="30" height="30" border="0" display="block" margin-left="auto" margin-right="auto">
+      OKR's
+      </a></li>
+
+      <li style="
+      border-right:2px solid #fff;
+      border-top:2px solid #fff;">
+      <a href=https://tredencepartner.cloud.looker.com/dashboards-next/14"
+      style="display:block;
+      padding:0 28px;
+      color:#1d252c;
+      font-family: Lucida Console;       text-decoration:none;">
+      <img src="https://cdn-icons-gif.flaticon.com/6172/6172532.gif" width="30" height="30" border="0" display="block" margin-left="auto" margin-right="auto">
+      CRR</a></li>
+
+      <li style="
+      border-right:2px solid #fff;
+      border-top:2px solid #fff;">
+      <a href="https://tredencepartner.cloud.looker.com/dashboards-next/14"
+      style="display:block;
+      padding:0 28px;
+      color:#1d252c;
+      font-family: Lucida Console;       text-decoration:none;">
+      <img src="https://cdn-icons-gif.flaticon.com/7211/7211797.gif" width="30" height="30" border="0" display="block" margin-left="auto" margin-right="auto">
+      Status</a></li>
+
+      <a href="https://tredencepartner.cloud.looker.com/dashboards-next/14"
+      style="display:block;
+      padding:0 28px;
+      color:#1d252c;
+      text-align:left;
+      font-family: Lucida Console;
+      border-right: 3px solid #10c877;
+      text-decoration:none;
+      color: #10c877">
+      <img src="https://cdn-icons-gif.flaticon.com/7211/7211792.gif" width="30" height="30" border="0" display="block" margin-left="auto" margin-right="auto">
+      Data Product
+      </a>
+      <ul style="line-height: 2px;list-style-type:none;">
+      <li>
+      <a href="https://tredencepartner.cloud.looker.com/dashboards-next/14"
+      style="font-family: Lucida Console; color:#1d252c;">&emsp;
+      <img src="https://cdn-icons-gif.flaticon.com/8112/8112922.gif" width="30" height="30" border="0" display="block" margin-left="auto" margin-right="auto">
+      Look</a></li>
+      <li>
+      <a href="https://tredencepartner.cloud.looker.com/dashboards-next/14"
+      style="font-family: Lucida Console; color:#1d252c;"> &emsp;
+      <img src="https://cdn-icons-gif.flaticon.com/7211/7211837.gif" width="30" height="30" border="0" display="block" margin-left="auto" margin-right="auto">
+      Explore</a></li>
+      <li>
+      <a href="https://tredencepartner.cloud.looker.com/dashboards-next/14"
+      style="font-family: Lucida Console; color:#1d252c;"> &emsp;
+      <img src="https://cdn-icons-gif.flaticon.com/7211/7211834.gif" width="30" height="30" border="0" display="block" margin-left="auto" margin-right="auto">
+      Dashboard</a></li>
+      </ul>
+
+      <li style="
+      border-right:2px solid #fff;
+      border-top:2px solid #fff;"><a href="https://tredencepartner.cloud.looker.com/dashboards-next/14"
+      style="display:block;
+      padding:0 28px;
+      color:#1d252c;
+      font-family: Lucida Console;       text-decoration:none;">
+      <img src="https://cdn-icons-gif.flaticon.com/8112/8112604.gif" width="30" height="30" border="0" display="block" margin-left="auto" margin-right="auto">
+      Data Search</a></li>
+
+      <li style="
+      border-right:2px solid #fff;
+      border-top:2px solid #fff;"><a href=" "
+      style="display:block;
+      padding:0 28px;
+      color:#1d252c;
+      font-family: Lucida Console;       text-decoration:none;">
+      <img src="https://cdn-icons-gif.flaticon.com/6569/6569125.gif" width="30" height="30" border="0" display="block" margin-left="auto" margin-right="auto">
+      Data Access</a></li>
+
+      <li style="
+      border-right:2px solid #fff;
+      border-top:2px solid #fff;
+      "><a href="https://tredencepartner.cloud.looker.com/dashboards-next/14"
+      style="display:block;
+      padding:0 28px;
+      color:#1d252c;
+      font-family: Lucida Console;       text-decoration:none;">
+      <img src="https://cdn-icons-gif.flaticon.com/6172/6172509.gif" width="30" height="30" border="0" display="block" margin-left="auto" margin-right="auto">
+      Data Cost</a></li>
+
+      <li style="
+      border-right:2px solid #fff;
+      border-top:2px solid #fff;
+      "><a href="https://tredencepartner.cloud.looker.com/dashboards-next/14"
+      style="display:block;
+      padding:0 28px;
+      color:#1d252c;
+      font-family: Lucida Console;       text-decoration:none;">
+      <img src="https://cdn-icons-gif.flaticon.com/7211/7211817.gif" width="30" height="30" border="0" display="block" margin-left="auto" margin-right="auto">
+      Engage</a></li>
+      </ul>
+      ;;
+  }
+
+  #     <ul style="font-size: 14px; padding: 2px 1px 2px 3px;">
+  #     <li> <a style='border-radius: 5px; padding: 5px 1px 2px 3px; margin-bottom: 10px; font-weight: bold;' href="#">Home</a>
+  #     </li><li>
+  #     <a style='border-radius: 5px; padding: 5px 10px; margin-bottom: 10px;' href="#">Business Pulse</a>
+  #     </li><li>
+  #     <a style='border-radius: 5px; padding: 5px 10px; margin-bottom: 10px;' href="#">Demographics</a>
+  #     </li><li>
+  #     <a style='border-radius: 5px; padding: 5px 10px; margin-bottom: 10px;' href="#">Web Analytics</a>
+  #     </li></ul>
+  #     ;;
+  # }
+
+  measure: countt {
+    type: count
+    # drill_fields: [friendly_name]
+    html:  <div style='background-color: #ffffdd; padding: 5px 10px; border: solid 1px #ededed; border-radius: 15px;'>{{value}}</div>;;
+
+
+
   }
 
   # ----- Sets of fields for drilling ------
