@@ -28,7 +28,8 @@ access_grant: can_view_data {
 }
 explore: order_items {
   sql_always_where: ${rbac_view.user} = ('{{ _user_attributes['first_name'] }}')
-  OR ${rbac_view.reporting_manager} = ('{{ _user_attributes['first_name'] }}')  ;;
+  OR ${rbac_view.reporting_manager} = ('{{ _user_attributes['first_name'] }}')
+  OR ${rbac_view.reporting_manager_1} = ('{{ _user_attributes['first_name'] }}');;
   access_filter: {
     field: users.region
     user_attribute: region
