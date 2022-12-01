@@ -72,6 +72,10 @@ explore: order_items {
 explore: distribution_centers {}
 
 explore: inventory_items {
+  access_filter: {
+    field: inventory_items.product_brand
+    user_attribute: inventory
+  }
   join: products {
     type: left_outer
     sql_on: ${inventory_items.product_id} = ${products.id} ;;
