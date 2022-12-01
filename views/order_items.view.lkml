@@ -179,150 +179,150 @@ view: order_items {
   measure: hor_menu {
     type: count
     html:
-   <div style=" display: flex; justify-content: space-around;">
-   <img src="https://mms.businesswire.com/media/20220518005288/en/1457777/5/Logo_HZ_RGB.jpg" width="130" height="30" border="0" />
-  </div>
-   <ul style="
-    float:left;
-    list-style:none;
-    line-height:36px;
-    text-align:center;
-    background:#F2F2F2;
-    font-family:Google Sans, Noto Sans, Noto Sans JP, Noto Sans CJK KR, Noto Sans Arabic UI, Noto Sans Devanagari UI, Noto Sans Hebrew, Noto Sans Thai UI, Helvetica, Arial, sans-serif;
-    font-size:14px">
+       <div style=" display: flex; justify-content: space-around;">
+       <img src="https://mms.businesswire.com/media/20220518005288/en/1457777/5/Logo_HZ_RGB.jpg" width="130" height="30" border="0" />
+      </div>
+       <ul style="
+        float:left;
+        list-style:none;
+        line-height:36px;
+        text-align:center;
+        background:#F2F2F2;
+        font-family:Google Sans, Noto Sans, Noto Sans JP, Noto Sans CJK KR, Noto Sans Arabic UI, Noto Sans Devanagari UI, Noto Sans Hebrew, Noto Sans Thai UI, Helvetica, Arial, sans-serif;
+        font-size:14px">
 
-   <li style="float:left;
-    border-right:2px solid #fff;
-    border-top:2px solid #fff;">
-    <a href=""
-    style="display:block;
-    padding:12px 28px;
-    color:#1d252c;
-    font-family: Lucida Console;
-    background:#F2F2F2;
-    text-decoration:none;
-    border-radius: 8px;"
-    >OKR's</a></li>
+      <li style="float:left;
+      border-right:2px solid #fff;
+      border-top:2px solid #fff;">
+      <a href=""
+      style="display:block;
+      padding:12px 28px;
+      color:#1d252c;
+      font-family: Lucida Console;
+      background:#F2F2F2;
+      text-decoration:none;
+      border-radius: 8px;"
+      >OKR's</a></li>
 
-   <li style="float:left;
-    border-right:2px solid #fff;
-    border-top:2px solid #fff;">
-    <a href=""
-    style="display:block;
-    padding:12px 28px;
-    color:#1d252c;
-    font-family: Lucida Console;
-    background:#F2F2F2;
-    text-decoration:none;
-    border-radius: 8px;"
-    >CRR</a></li>
+      <li style="float:left;
+      border-right:2px solid #fff;
+      border-top:2px solid #fff;">
+      <a href=""
+      style="display:block;
+      padding:12px 28px;
+      color:#1d252c;
+      font-family: Lucida Console;
+      background:#F2F2F2;
+      text-decoration:none;
+      border-radius: 8px;"
+      >CRR</a></li>
 
-    <li style="float:left;
-    border-right:2px solid #fff;
-    border-top:2px solid #fff;">
-    <a href=""
-    style="display:block;
-    padding:12px 28px;
-    color:#1d252c;
-    font-family: Lucida Console;
-    background:#F2F2F2;
-    text-decoration:none;
-    border-radius: 8px;">Status</a></li>
+      <li style="float:left;
+      border-right:2px solid #fff;
+      border-top:2px solid #fff;">
+      <a href=""
+      style="display:block;
+      padding:12px 28px;
+      color:#1d252c;
+      font-family: Lucida Console;
+      background:#F2F2F2;
+      text-decoration:none;
+      border-radius: 8px;">Status</a></li>
 
-    <li style="float:left;
-    border-right:2px solid #fff;
-    border-top:2px solid #fff;">
-    <a href=""
-    style="display:block;
-    padding:12px 28px;
-    color:#1d252c;
-    font-family: Lucida Console;
-    background:#1ce783;
-    text-decoration:none;
-    border-radius: 8px;"
-    >Data Product</a></li>
+      <li style="float:left;
+      border-right:2px solid #fff;
+      border-top:2px solid #fff;">
+      <a href=""
+      style="display:block;
+      padding:12px 28px;
+      color:#1d252c;
+      font-family: Lucida Console;
+      background:#1ce783;
+      text-decoration:none;
+      border-radius: 8px;"
+      >Data Product</a></li>
 
-   <li style="float:left;
-    border-right:2px solid #fff;
-    border-top:2px solid #fff;">
-    <a href=""
-    style="display:block;
-    padding:12px 28px;
-    color:#1d252c;
-    font-family: Lucida Console;
-    background:#F2F2F2;
-    text-decoration:none;
-    border-radius: 8px;"
-    >Data Search</a></li>
+      <li style="float:left;
+      border-right:2px solid #fff;
+      border-top:2px solid #fff;">
+      <a href=""
+      style="display:block;
+      padding:12px 28px;
+      color:#1d252c;
+      font-family: Lucida Console;
+      background:#F2F2F2;
+      text-decoration:none;
+      border-radius: 8px;"
+      >Data Search</a></li>
 
-   <li style="float:left;
-    border-right:2px solid #fff;
-    border-top:2px solid #fff;">
-    <a href=""
-    style="display:block;
-    padding:12px 28px;
-    color:#1d252c;
-    font-family: Lucida Console;
-    background:#F2F2F2;
-    text-decoration:none;
-    border-radius: 8px;"
-    >Data Access</a></li>
+      <li style="float:left;
+      border-right:2px solid #fff;
+      border-top:2px solid #fff;">
+      <a href=""
+      style="display:block;
+      padding:12px 28px;
+      color:#1d252c;
+      font-family: Lucida Console;
+      background:#F2F2F2;
+      text-decoration:none;
+      border-radius: 8px;"
+      >Data Access</a></li>
 
-   <li style="float:left;
-    border-right:2px solid #fff;
-    border-top:2px solid #fff;
-    "><a href=""
-    style="display:block;
-    padding:12px 28px;
-    color:#1d252c;
-    font-family: Lucida Console;
-    background:#F2F2F2;
-    text-decoration:none;
-    border-radius: 8px;"
-    >Data Cost</a></li>
+      <li style="float:left;
+      border-right:2px solid #fff;
+      border-top:2px solid #fff;
+      "><a href=""
+      style="display:block;
+      padding:12px 28px;
+      color:#1d252c;
+      font-family: Lucida Console;
+      background:#F2F2F2;
+      text-decoration:none;
+      border-radius: 8px;"
+      >Data Cost</a></li>
 
-   <li style="float:left;
-    border-right:2px solid #fff;
-    border-top:2px solid #fff;">
-    <a href=""
-    style="display:block;
-    padding:12px 28px;
-    color:#1d252c;
-    font-family: Lucida Console;
-    background:#F2F2F2;
-    text-decoration:none;
-    border-radius: 8px;"
-    >Engage</a></li>
+      <li style="float:left;
+      border-right:2px solid #fff;
+      border-top:2px solid #fff;">
+      <a href=""
+      style="display:block;
+      padding:12px 28px;
+      color:#1d252c;
+      font-family: Lucida Console;
+      background:#F2F2F2;
+      text-decoration:none;
+      border-radius: 8px;"
+      >Engage</a></li>
 
-   <li style="float:left;
-    border-right:2px solid #fff;
-    border-top:2px solid #fff;
-    "><a href=""
-    style="display:block;
-    padding:12px 28px;
-    color:#1d252c;
-    font-family: Lucida Console;
-    background:#F2F2F2;
-    text-decoration:none;
-    border-radius: 8px;"
-    >TRANSFER MARKET</a></li>
+      <li style="float:left;
+      border-right:2px solid #fff;
+      border-top:2px solid #fff;
+      "><a href=""
+      style="display:block;
+      padding:12px 28px;
+      color:#1d252c;
+      font-family: Lucida Console;
+      background:#F2F2F2;
+      text-decoration:none;
+      border-radius: 8px;"
+      >TRANSFER MARKET</a></li>
 
-    <li style="float:left;
-    border-right:2px solid #fff;
-    border-top:2px solid #fff;
-    "><a href=""
-    style="display:block;
-    padding:12px 28px;
-    color:#1d252c;
-    font-family: Lucida Console;
-    background:#F2F2F2;
-    text-decoration:none;
-    border-radius: 8px;"
-    >TRADE</a></li>
+      <li style="float:left;
+      border-right:2px solid #fff;
+      border-top:2px solid #fff;
+      "><a href=""
+      style="display:block;
+      padding:12px 28px;
+      color:#1d252c;
+      font-family: Lucida Console;
+      background:#F2F2F2;
+      text-decoration:none;
+      border-radius: 8px;"
+      >TRADE</a></li>
 
-    </ul>
+      </ul>
 
-  ;;
+      ;;
   }
 
   measure: menu {
@@ -331,18 +331,18 @@ view: order_items {
     html:
       <img src="https://mms.businesswire.com/media/20220518005288/en/1457777/5/Logo_HZ_RGB.jpg" width="130" height="30" border="0" display="block" margin-left="auto" margin-right="auto"/>
 
-            <ul style="margin:0;
-            padding:0;
-            list-style:none;
-            line-height:36px;
-            text-align:left;
-            font-family:Google Sans, Noto Sans, Noto Sans JP, Noto Sans CJK KR, Noto Sans Arabic UI, Noto Sans Devanagari UI, Noto Sans Hebrew, Noto Sans Thai UI, Helvetica, Arial, sans-serif;
-            font-size:15px">
+                  <ul style="margin:0;
+                  padding:0;
+                  list-style:none;
+                  line-height:36px;
+                  text-align:left;
+                  font-family:Google Sans, Noto Sans, Noto Sans JP, Noto Sans CJK KR, Noto Sans Arabic UI, Noto Sans Devanagari UI, Noto Sans Hebrew, Noto Sans Thai UI, Helvetica, Arial, sans-serif;
+                  font-size:15px">
 
       <li style="
       border-right:2px solid #fff;
       border-top:2px solid #fff;">
-      <a href="https://tredencepartner.cloud.looker.com/dashboards-next/14"
+      <a href=""
       style="display:block;
       padding:0 28px;
       color:#1d252c;
@@ -355,7 +355,7 @@ view: order_items {
       <li style="
       border-right:2px solid #fff;
       border-top:2px solid #fff;">
-      <a href=https://tredencepartner.cloud.looker.com/dashboards-next/14"
+      <a href="
       style="display:block;
       padding:0 28px;
       color:#1d252c;
@@ -366,7 +366,7 @@ view: order_items {
       <li style="
       border-right:2px solid #fff;
       border-top:2px solid #fff;">
-      <a href="https://tredencepartner.cloud.looker.com/dashboards-next/14"
+      <a href=""
       style="display:block;
       padding:0 28px;
       color:#1d252c;
@@ -374,7 +374,7 @@ view: order_items {
       <img src="https://cdn-icons-gif.flaticon.com/7211/7211797.gif" width="30" height="30" border="0" display="block" margin-left="auto" margin-right="auto">
       Status</a></li>
 
-      <a href="https://tredencepartner.cloud.looker.com/dashboards-next/14"
+      <a href=""
       style="display:block;
       padding:0 28px;
       color:#1d252c;
@@ -388,17 +388,17 @@ view: order_items {
       </a>
       <ul style="line-height: 2px;list-style-type:none;">
       <li>
-      <a href="https://tredencepartner.cloud.looker.com/dashboards-next/14"
+      <a href=""
       style="font-family: Lucida Console; color:#1d252c;">&emsp;
       <img src="https://cdn-icons-gif.flaticon.com/8112/8112922.gif" width="30" height="30" border="0" display="block" margin-left="auto" margin-right="auto">
       Look</a></li>
       <li>
-      <a href="https://tredencepartner.cloud.looker.com/dashboards-next/14"
+      <a href=""
       style="font-family: Lucida Console; color:#1d252c;"> &emsp;
       <img src="https://cdn-icons-gif.flaticon.com/7211/7211837.gif" width="30" height="30" border="0" display="block" margin-left="auto" margin-right="auto">
       Explore</a></li>
       <li>
-      <a href="https://tredencepartner.cloud.looker.com/dashboards-next/14"
+      <a href=""
       style="font-family: Lucida Console; color:#1d252c;"> &emsp;
       <img src="https://cdn-icons-gif.flaticon.com/7211/7211834.gif" width="30" height="30" border="0" display="block" margin-left="auto" margin-right="auto">
       Dashboard</a></li>
@@ -406,7 +406,7 @@ view: order_items {
 
       <li style="
       border-right:2px solid #fff;
-      border-top:2px solid #fff;"><a href="https://tredencepartner.cloud.looker.com/dashboards-next/14"
+      border-top:2px solid #fff;"><a href=""
       style="display:block;
       padding:0 28px;
       color:#1d252c;
@@ -427,7 +427,7 @@ view: order_items {
       <li style="
       border-right:2px solid #fff;
       border-top:2px solid #fff;
-      "><a href="https://tredencepartner.cloud.looker.com/dashboards-next/14"
+      "><a href=""
       style="display:block;
       padding:0 28px;
       color:#1d252c;
@@ -438,7 +438,7 @@ view: order_items {
       <li style="
       border-right:2px solid #fff;
       border-top:2px solid #fff;
-      "><a href="https://tredencepartner.cloud.looker.com/dashboards-next/14"
+      "><a href=""
       style="display:block;
       padding:0 28px;
       color:#1d252c;
@@ -461,13 +461,86 @@ view: order_items {
   #     ;;
   # }
 
+  measure: menu_new {
+    type: count
+    # sql: 1;;
+    html:
+    <ul style="margin:0;
+              padding:0;
+              list-style:none;
+              line-height:36px;
+              text-align:left;
+              font-size:15px;
+              font-family:Open Sans;">
+
+      <li style="
+      border-right:2px solid #fff;
+      border-top:2px solid #fff;">
+      <a href=""
+      style="display:block;
+      padding:0;
+      color:#1d252c;
+      text-align:left;" >
+      OKR's
+      </a></li>
+
+      <a href=""
+      style="display:block;
+      color:#1d252c;
+      text-align:left;
+      color: #10c877">
+      CRR
+      </a>
+      <ul style="line-height: 30px;list-style-type:none;">
+      <li style="line-height:30px;border-left: 3px solid #10c877;">
+      <a href=""
+      style=" color:#1d252c;line-height:30px;">&emsp;
+      Summary</a></li>
+      <li style="line-height:30px;border-left: 3px solid #10c877;">
+      <a href=""
+      style=" color:#1d252c;line-height:30px;"> &emsp;
+      Explore</a></li>
+      <li>
+      </ul>
+
+      <a href=""
+      style="display:block;
+      padding:0;
+      color:#1d252c;
+      text-align:left;
+      color: #10c877">
+      GTMSO
+      </a>
+      <ul style="line-height: 30px;list-style-type:none;">
+      <li>
+      <a href=""
+      style=" color:#1d252c;line-height:30px;border-left: 3px solid #10c877;">&emsp;
+      Consumption Summary</a></li>
+      </ul>
+
+      <li style="
+      border-right:2px solid #fff;
+      border-top:2px solid #fff;
+      "><a href=""
+      style="display:block;
+      color:#1d252c;">
+      Feedback</a></li>
+
+      <li style="
+      border-right:2px solid #fff;
+      border-top:2px solid #fff;
+      "><a href=""
+      style="display:block;
+      color:#1d252c;">
+      Release Notes</a></li>
+      </ul>
+      ;;
+  }
+
   measure: countt {
     type: count
     # drill_fields: [friendly_name]
     html:  <div style='background-color: #ffffdd; padding: 5px 10px; border: solid 1px #ededed; border-radius: 15px;'>{{value}}</div>;;
-
-
-
   }
 
   # ----- Sets of fields for drilling ------
@@ -483,4 +556,75 @@ view: order_items {
       products.id
     ]
   }
+  ################################################################################################################
+  measure: custom_crr{
+    group_label: "HTML Measures"
+    label: "CRR Overview"
+    type: count
+    html: <html>
+          <span align="Left">
+          <p style= "margin:0;padding:0;border:none;line-height:60%"><font line-height="60%" size="4"> dim_metric.hero_metric_category <img src="https://www.freeiconspng.com/uploads/info-icon-27.png" width="20" height="20" style= "margin-bottom:4px" title="metric_description"/></font></p>
+          </span>
+          <table cellspacing="80" style="width:100%">
+          <tbody>
+          <tr>
+          <td style="background-color:#e7eff3;width:33%;border-right:1px solid transparent;border-radius:10%">
+          <div style="margin-right: 4px">
+          <span>
+          <p style= "margin:0;padding:0;border:none;line-height:0%"><font line-height="0%" size="1"><br><b> Estimated Credited Consumption&nbsp&nbsp</b></font></p>
+          <h3 style= "margin-right:2px"><b><font size="5">$897.6M <br> </font></b></h3>
+          </span>
+          <span>
+          <h1> <font size="2">
+          <font color="#000000">(4/01/2022 - 31/03/2023)&nbsp</font></p></b>
+          </br>
+          </font></h1></span>
+          </div></td>
+          <td style="background-color:transparent;width:33%;border-right:1px solid transparent;border-radius:10%">
+          <div style="margin-right: 4px">
+          <span>
+          <p style= "margin:0;padding:0;border:none;line-height:0%"><font line-height="0%" size="1"><br><b> Quota for Period&nbsp&nbsp</b></font></p>
+          <h3 style= "margin-right:2px"><b><font size="5">$974.02M</b></h3>
+          </span>
+          <span>
+          <h1> <font size="2">
+          {% if sum_daily_yoy._value > 0 %}
+          <b><p style="color: #00B050">▲ {{ sum_daily_yoy._rendered_value }}
+          <font color="#000000"> YOY&nbsp</font></p></b>
+          {% else %}
+          <b><p style="color: #C00000">▼ {{ sum_daily_yoy._rendered_value }}
+          <font color="#000000"> YOY&nbsp</font></p></b>
+          {% endif %}</br>
+          </font></h1></span>
+          </div></td>
+          <td style="background-color:#f6f7f8;width:33%;border-right:1px solid transparent;border-radius:10%">
+          <div style="margin-right: 4px">
+          <span>
+          <p style= "margin:0;padding:0;border:none;line-height:0%"><font line-height="0%" size="1"><b> Count Between&nbsp&nbsp<br>
+          ( {{ start_date._rendered_value }} - {{ end_date._rendered_value }} )&nbsp </b></font></p>
+
+
+
+
+
+          <h3 style= "margin-right:2px"><b><font size="5">{{ sum_date_range._rendered_value }}</b></h3>
+          </span>
+          <span>
+          <h1> <font size="2">
+          {% if sum_date_range_yoy._value > 0 %}
+          <b><p style="color: #00B050">▲ {{ sum_date_range_yoy._rendered_value }}
+          <font color="#000000"> YOY&nbsp</font></p></b>
+          {% else %}
+          <b><p style="color: #C00000">▼ {{ sum_date_range_yoy._rendered_value }}
+          <font color="#000000"> YOY&nbsp</font></p></b>
+          {% endif %}</br>
+          </font></h1></span>
+          </div></td>
+          <tr>
+          </tbody>
+          </table>
+          </html>
+      ;;
+  }
+
 }
