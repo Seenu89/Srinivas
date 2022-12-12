@@ -537,6 +537,219 @@ view: order_items {
       ;;
   }
 
+
+  measure: menu1 {
+    type: count
+    # sql: 1;;
+    html:
+      <img src="https://mms.businesswire.com/media/20220518005288/en/1457777/5/Logo_HZ_RGB.jpg" width="130" height="30" border="0" display="block" margin-left="auto" margin-right="auto"/>
+
+                        <ul style="margin:0;
+                        padding:0;
+                        list-style:none;
+                        line-height:36px;
+                        text-align:left;
+                        font-family:Google Sans, Noto Sans, Noto Sans JP, Noto Sans CJK KR, Noto Sans Arabic UI, Noto Sans Devanagari UI, Noto Sans Hebrew, Noto Sans Thai UI, Helvetica, Arial, sans-serif;
+                        font-size:15px">
+
+      <li style="
+      border-right:2px solid #fff;
+      border-top:2px solid #fff;">
+      <a href=""
+      style="display:block;
+      padding:0 28px;
+      color:#1d252c;
+      text-align:left;
+      font-family: Lucida Console;       text-decoration:none;" >
+      <img src="https://cdn-icons-gif.flaticon.com/7211/7211809.gif" width="30" height="30" border="0" display="block" margin-left="auto" margin-right="auto">
+      OKR's
+      </a></li>
+
+      <li style="
+      border-right:2px solid #fff;
+      border-top:2px solid #fff;">
+      <a href="
+      style="display:block;
+      padding:0 28px;
+      color:#1d252c;
+      font-family: Lucida Console;       text-decoration:none;">
+      <img src="https://cdn-icons-gif.flaticon.com/6172/6172532.gif" width="30" height="30" border="0" display="block" margin-left="auto" margin-right="auto">
+      CRR</a></li>
+
+      <li style="
+      border-right:2px solid #fff;
+      border-top:2px solid #fff;">
+      <a href=""
+      style="display:block;
+      padding:0 28px;
+      color:#10c877;
+      font-family: Lucida Console;       text-decoration:none;">
+      <img src="https://cdn-icons-gif.flaticon.com/7211/7211797.gif" width="30" height="30" border="0" display="block" margin-left="auto" margin-right="auto">
+      Status</a></li>
+
+      <a href=""
+      style="display:block;
+      padding:0 28px;
+      color:#1d252c;
+      text-align:left;
+      font-family: Lucida Console;
+      border-right: 3px solid #10c877;
+      text-decoration:none;
+      color: #10c877">
+      <img src="https://cdn-icons-gif.flaticon.com/7211/7211792.gif" width="30" height="30" border="0" display="block" margin-left="auto" margin-right="auto">
+      Data Product
+      </a>
+      <ul style="line-height: 2px;list-style-type:none;">
+      <li>
+      <a href=""
+      style="font-family: Lucida Console; color:#1d252c;">&emsp;
+      <img src="https://cdn-icons-gif.flaticon.com/8112/8112922.gif" width="30" height="30" border="0" display="block" margin-left="auto" margin-right="auto">
+      Look</a></li>
+      <li>
+      <a href=""
+      style="font-family: Lucida Console; color:#1d252c;"> &emsp;
+      <img src="https://cdn-icons-gif.flaticon.com/7211/7211837.gif" width="30" height="30" border="0" display="block" margin-left="auto" margin-right="auto">
+      Explore</a></li>
+      <li>
+      <a href=""
+      style="font-family: Lucida Console; color:#1d252c;"> &emsp;
+      <img src="https://cdn-icons-gif.flaticon.com/7211/7211834.gif" width="30" height="30" border="0" display="block" margin-left="auto" margin-right="auto">
+      Dashboard</a></li>
+      </ul>
+
+      <li style="
+      border-right:2px solid #fff;
+      border-top:2px solid #fff;"><a href=""
+      style="display:block;
+      padding:0 28px;
+      color:#1d252c;
+      font-family: Lucida Console;       text-decoration:none;">
+      <img src="https://cdn-icons-gif.flaticon.com/8112/8112604.gif" width="30" height="30" border="0" display="block" margin-left="auto" margin-right="auto">
+      Data Search</a></li>
+
+      <li style="
+      border-right:2px solid #fff;
+      border-top:2px solid #fff;"><a href=" "
+      style="display:block;
+      padding:0 28px;
+      color:#1d252c;
+      font-family: Lucida Console;       text-decoration:none;">
+      <img src="https://cdn-icons-gif.flaticon.com/6569/6569125.gif" width="30" height="30" border="0" display="block" margin-left="auto" margin-right="auto">
+      Data Access</a></li>
+
+      <li style="
+      border-right:2px solid #fff;
+      border-top:2px solid #fff;
+      "><a href=""
+      style="display:block;
+      padding:0 28px;
+      color:#1d252c;
+      font-family: Lucida Console;       text-decoration:none;">
+      <img src="https://cdn-icons-gif.flaticon.com/6172/6172509.gif" width="30" height="30" border="0" display="block" margin-left="auto" margin-right="auto">
+      Data Cost</a></li>
+
+      <li style="
+      border-right:2px solid #fff;
+      border-top:2px solid #fff;
+      "><a href=""
+      style="display:block;
+      padding:0 28px;
+      color:#1d252c;
+      font-family: Lucida Console;       text-decoration:none;">
+      <img src="https://cdn-icons-gif.flaticon.com/7211/7211817.gif" width="30" height="30" border="0" display="block" margin-left="auto" margin-right="auto">
+      Engage</a></li>
+      </ul>
+      ;;
+  }
+
+  #     <ul style="font-size: 14px; padding: 2px 1px 2px 3px;">
+  #     <li> <a style='border-radius: 5px; padding: 5px 1px 2px 3px; margin-bottom: 10px; font-weight: bold;' href="#">Home</a>
+  #     </li><li>
+  #     <a style='border-radius: 5px; padding: 5px 10px; margin-bottom: 10px;' href="#">Business Pulse</a>
+  #     </li><li>
+  #     <a style='border-radius: 5px; padding: 5px 10px; margin-bottom: 10px;' href="#">Demographics</a>
+  #     </li><li>
+  #     <a style='border-radius: 5px; padding: 5px 10px; margin-bottom: 10px;' href="#">Web Analytics</a>
+  #     </li></ul>
+  #     ;;
+  # }
+
+  measure: menu_new1 {
+    type: count
+    # sql: 1;;
+    html:
+    <ul style="margin:0;
+              padding:0;
+              list-style:none;
+              line-height:36px;
+              text-align:left;
+              font-size:15px;
+              font-family:Open Sans;">
+
+      <li style="
+      border-right:2px solid #fff;
+      border-top:2px solid #fff;">
+      <a href=""
+      style="display:block;
+      padding:0;
+      color:#1d252c;
+      text-align:left;" >
+      OKR's
+      </a></li>
+
+      <a href=""
+      style="display:block;
+      color:#10c877;
+      text-align:left;
+      color: #10c877">
+      CRR
+      </a>
+      <ul style="line-height: 30px;list-style-type:none;">
+      <li style="line-height:30px;border-left: 3px solid #10c877;">
+      <a href=""
+      style=" color:#1d252c;line-height:30px;">&emsp;
+      Summary</a></li>
+      <li style="line-height:30px;border-left: 3px solid #10c877;">
+      <a href=""
+      style=" color:#1d252c;line-height:30px;"> &emsp;
+      Explore</a></li>
+      <li>
+      </ul>
+
+      <a href=""
+      style="display:block;
+      padding:0;
+      color:#1d252c;
+      text-align:left;
+      color: #10c877">
+      GTMSO
+      </a>
+      <ul style="line-height: 30px;list-style-type:none;">
+      <li>
+      <a href=""
+      style=" color:#1d252c;line-height:30px;border-left: 3px solid #10c877;">&emsp;
+      Consumption Summary</a></li>
+      </ul>
+
+      <li style="
+      border-right:2px solid #fff;
+      border-top:2px solid #fff;
+      "><a href=""
+      style="display:block;
+      color:#1d252c;">
+      Feedback</a></li>
+
+      <li style="
+      border-right:2px solid #fff;
+      border-top:2px solid #fff;
+      "><a href=""
+      style="display:block;
+      color:#1d252c;">
+      Release Notes</a></li>
+      </ul>
+      ;;
+  }
+
   measure: countt {
     type: count
     # drill_fields: [friendly_name]
