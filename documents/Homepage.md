@@ -1,5 +1,7 @@
 
-<h1><span style="color:#10c877">Homepage</span></h1>
+<h1><span style="color:#10c877"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Homepage</span></h1>
 <h2><span style="color:#10c877">Dashboards</span></h2>
 
 Dashboards provide a view of related content by allowing you to place multiple tables, graphs, or looks on one page.
@@ -12,7 +14,7 @@ Dashboards provide a view of related content by allowing you to place multiple t
 
 <details>
 
-<summary><h4>Dashboard</h4> </summary>
+<summary><h4> > Dashboard</h4> </summary>
 
 What's Changed:<br>
 <br>
