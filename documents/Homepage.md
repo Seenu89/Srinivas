@@ -2,6 +2,8 @@
 <h1><span style="color:#10c877"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 Homepage</span></h1>
+<img align="left" width="1300px" height="80px" src="https://i.postimg.cc/HnFfJYyR/New-Relic-Logo-2.png"/><br>
+<br>
 <h2><span style="color:#10c877">Dashboards</span></h2>
 
 Dashboards provide a view of related content by allowing you to place multiple tables, graphs, or looks on one page.
