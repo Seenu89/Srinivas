@@ -14,14 +14,14 @@ Dashboards provide a view of related content by allowing you to place multiple t
 
 <summary><h4>Dashboard</h4> </summary>
 
-What's Changed:
+What's Changed:<br>
+<br>
 
-
-- modified explore label for NREM explore by @abibave in #1
-
-- modified datagroup label by @abibave in #2
-
-- NR56572-Restructured and rebuilt existing NREM Dashboards-v1.0 by @vprasad in #3
+- modified explore label for NREM explore in #1 <br>
+<br>
+- modified datagroup label in #2<br>
+<br>
+- NR56572-Restructured and rebuilt existing NREM Dashboards-v1.0  in #3<br>
 
 
 </details>
