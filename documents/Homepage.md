@@ -8,7 +8,7 @@ Dashboards provide a view of related content by allowing you to place multiple t
 | :----------: | :-----------: |
 |[OKRs and Company KPIs](https://newrelic.cloud.looker.com/dashboards/nrem_ssot::okrs_and_company_kpis_2_0?Start%20Date=2022%2F04%2F01&OKR%20Buying%20Program=)|Provides Information and Details of Paid Accounts,Paid Ingest and Paid Users|
 |[CRR Summary](https://newrelic.cloud.looker.com/dashboards/nrem_ssot::crr_summary_2_0?CRR%20Metric%20(Used%20to%20toggle%20CRR%20change%20by%20Account%20chart)=CRR)|About Growth and Change in CRR|
-|[CRR Explore](https://newrelic.cloud.looker.com/dashboards/nrem_ssot::crr_explore_2_0?Start%20Date=2022%2F04%2F01&End%20Date=2022%2F12%2F12&SFDC%20Account%20Name%20(Current)=&Field%20Breakout%20Selector=Starting%20Buying%20Program&Starting%20Buying%20Program=&Current%20Buying%20Program=&Starting%20CRR%20Burn%20Rate=&Current%20CRR%20Burn%20Rate=&Starting%20CRR%20Band=&Current%20CRR%20Band=&Starting%20Renewal%20Quarter=&GEO%20CODE=)|Deailed Analysis of CRR|
+|[CRR Explore](https://newrelic.cloud.looker.com/dashboards/nrem_ssot::crr_explore_2_0?Start%20Date=2022%2F04%2F01&End%20Date=2022%2F12%2F12&SFDC%20Account%20Name%20(Current)=&Field%20Breakout%20Selector=Starting%20Buying%20Program&Starting%20Buying%20Program=&Current%20Buying%20Program=&Starting%20CRR%20Burn%20Rate=&Current%20CRR%20Burn%20Rate=&Starting%20CRR%20Band=&Current%20CRR%20Band=&Starting%20Renewal%20Quarter=&GEO%20CODE=)|Detailed Analysis of CRR|
 
 
 <details>
