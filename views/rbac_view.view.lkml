@@ -69,6 +69,10 @@ view: rbac_view {
     dimension: reporting_manager {
       type: string
       sql: ${TABLE}.Reporting_Manager ;;
+      link: {
+        url: "https://tredencepartner.cloud.looker.com/dashboards/14?User={{ value }}"
+        label: "ca"
+      }
     }
 
   dimension: reporting_manager_1 {
